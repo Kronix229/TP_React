@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--rojo: #ba181b;
+	--azul: #00b4d8;
+	--azul-hover: #48cae4;
+	--rojo-hover: #e5383b;
+	--verde: #949494;
+}
+
+body {
+	font-family: Poppins;
+	max-width: 1200px;
+	margin: 40px auto;
+	display: flex;
+	justify-content: center;
+	background-image: url(./components/Images/fondoTodo.jpg);
+}
+
+.card-to-do {
+	background-color: #fff;
+	padding: 25px;
+	border-radius: 20px;
+	width: 700px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h4 {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #949494;
+font-size: small;
+padding: 5px;
+}
+.counter-todos {
+	background-color: rgb(250, 234, 144);
+	width: 700px;
+	margin: 40px 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.counter-todos h3 {
+	font-weight: 500;
+}
+
+.counter-todos span {
+	background-color: #dadadac5;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 24px;
+	margin-left: 10px;
+}
+
+ul {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+ul li {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+ul li span {
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+ul li form {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.input-update {
+	border: none;
+	font-weight: 500;
+	font-family: inherit;
+	font-size: 18px;
+	color: #555;
+	width: 100%;
+	outline: none;
+}
+
+.container-done {
+	width: 24px;
+	height: 24px;
+	border-radius: 20px;
+	border: 2px solid var(--verde);
+	cursor: pointer;
+}
+
+.container-done.active {
+	background-color: var(--verde);
+}
+
+.text-decoration-dashed {
+	text-decoration: line-through;
+}
+
+.btn-delete {
+	background-color: var(--rojo);
+	color: #fff;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 50%;
+	transition: all 0.3s;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+
+form {
+	display: flex;
+	gap: 20px;
+}
+
+.input-add {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	flex: 1;
+	font-family: inherit;
+	font-size: 17px;
+	color: #555;
+}
+
+.btn-add {
+	border-color: #555555;
+	background-color:#fff;
+	color: #555555;
+	padding: 15px;
+	border-radius: 100%;
+	font-weight: bold;
+	font-family:'Courier New', Courier, monospace;
+	cursor: pointer;
+	font-size: 20px;
+}
