@@ -23,7 +23,7 @@ body {
 
 .card-to-do {
 	background-color: #fff;
-	padding: 25px;
+	padding: 0px;
 	border-radius: 20px;
 	width: 700px;
 }
@@ -41,7 +41,7 @@ padding: 5px;
 .counter-todos {
 	background-color: rgb(250, 234, 144);
 	width: 700px;
-	margin: 40px 0;
+	margin-bottom: 30px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -129,6 +129,7 @@ ul li form {
 
 form {
 	display: flex;
+	align-items: center;
 	gap: 20px;
 }
 
@@ -143,13 +144,22 @@ form {
 }
 
 .btn-add {
+	display: inline-flex;
+  	align-items: center;
 	border-color: #555555;
 	background-color:#fff;
 	color: #555555;
-	padding: 15px;
+	height: fit-content;
 	border-radius: 100%;
 	font-weight: bold;
 	font-family:'Courier New', Courier, monospace;
 	cursor: pointer;
 	font-size: 20px;
 }
+.mas {
+	position: relative;
+    transform: translateX(-2%) translateY(-20%);
+	height: 15px;
+	width: 15px;
+}
+
