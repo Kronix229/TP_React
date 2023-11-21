@@ -3,6 +3,7 @@ import './App.css'
 import { TodoAdd } from './components/TodoAdd/TodoAdd'
 import {TodoList} from './components/TodoList/TodoList'
 import { useTodo } from './hooks/useTodo'
+import { TodoNavbar } from './components/TodoNavbar/navbar'
 
 function App() {
     const{
@@ -17,15 +18,13 @@ function App() {
 
     return(
         <>
-<div className='card-to-do'>
+			<div className='card-to-do'>
 
 				<div className='counter-todos'>
-					<h3>
-						Total de tareas: <span>{todosCount}</span>
-					</h3>
-					<h3>
-						A realizar: <span>{pendingTodosCount}</span>
-					</h3>
+					<TodoNavbar 
+					todosCount= {todosCount}
+					pendingTodosCount = {pendingTodosCount}
+					/>
 				</div>
 
 				<div className='add-todo'>
