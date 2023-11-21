@@ -33,7 +33,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 			/>
 
 			<button className='btn-add' type='submit'>
-				+
+				<span className='mas'>+</span>
 			</button>
 		</form>
 	);
