@@ -1,21 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const TodoNavbar = ({todosCount, pendingTodosCount}) => {
     return(
        <nav className='nav'>
-        <div>Filter:</div>
+        <div className='filter'>Filter:</div>
         <ul>
             <li>
-                <a href='/All'>All</a>
+                <Link to='/All'>All</Link>
             </li>
             <li>
-                <a href='/Active'>Active</a>
+                <Link to='/Active'>Active</Link>
             </li>
             <li>
-                <a href='Finished'>Finished</a>
+                <Link to='/Finished'>Finished</Link>
             </li>
-            <div className='Tcount'>{todosCount}</div>
-            <div className='Pcount'>{pendingTodosCount}</div>
+            <div className='contadores'>
+                <div className='Tcount'>{todosCount}</div>
+                <div className='Pcount'>{pendingTodosCount}</div>
+            </div>
         </ul>
 
        </nav>
