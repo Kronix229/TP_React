@@ -32,34 +32,12 @@ h1 {
 	text-align: center;
 }
 
-.stars{
-	color: red;
-	gap: 10px;
-	margin-left: 2rem;
-	margin-bottom: 0.2rem;
-}
-
 h4 {
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: red;
-	border: .12rem solid red;
-	font-size: 16px;
-	padding: 5px 22px;
-	background-color: #ffffff;
-	border-radius: 10px;
-	font-weight: 500;
-	cursor: pointer;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #949494;
+font-size: small;
+padding: 5px;
 }
-
-.button-done-disabled{
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: rgb(255, 255, 255);
-	font-size: 16px;
-	background-color: #c5c5c5;
-	cursor: pointer;
-	border: 2px solid #c5c5c5;
-}
-
 .counter-todos {
 	background-color: rgb(250, 234, 144);
 	width: 700px;
@@ -84,7 +62,7 @@ ul {
 	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
-	/* gap: 15px; */
+	gap: 15px;
 }
 
 ul li {
@@ -93,20 +71,11 @@ ul li {
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	padding: 10px 0px;
-	margin: 0 2rem;
-	padding: 1rem 0;
-	border-bottom: 1px solid rgb(172, 172, 172);
-	/* background-color: #b1b1b1; */
-}
-
-ul li:last-child {
-	padding-bottom: 20px;
-	border-bottom: 0px solid rgb(172, 172, 172);
 }
 
 ul li span {
 	overflow: hidden;
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 }
@@ -121,11 +90,10 @@ ul li form {
 	border: none;
 	font-weight: 500;
 	font-family: inherit;
-	font-size: 20px;
+	font-size: 18px;
 	color: #555;
 	width: 100%;
 	outline: none;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-done {
@@ -142,9 +110,6 @@ ul li form {
 
 .text-decoration-dashed {
 	text-decoration: line-through;
-	color: rgb(183, 183, 183);
-	font-family: Arial, Helvetica, sans-serif;	
-	font-style: italic;
 }
 
 .btn-delete {
@@ -159,7 +124,6 @@ ul li form {
 	transition: all 0.3s;
 	cursor: pointer;
 	font-family: inherit;
-	margin-right: 1rem;
 }
 
 
@@ -175,39 +139,27 @@ form {
 	padding: 10px 20px;
 	flex: 1;
 	font-family: inherit;
-	font-size: 20px;
-	color: rgb(150, 150, 150);
-	font-family: Arial, Helvetica, sans-serif;	
-	font-style: italic;
+	font-size: 17px;
+	color: #555;
 }
 
 .btn-add {
 	display: inline-flex;
   	align-items: center;
-	border-color: rgb(150, 150, 150);
+	border-color: #555555;
 	background-color:#fff;
-	color: rgb(150, 150, 150);
+	color: #555555;
 	height: fit-content;
-	border: 2.5px solid;
 	border-radius: 100%;
 	font-weight: bold;
 	font-family:'Courier New', Courier, monospace;
 	cursor: pointer;
-	font-size: 30px;
-	margin-left: 2.5rem;
-	
+	font-size: 20px;
 }
 .mas {
 	position: relative;
-    transform: translateX(1%) translateY(-33%);
-	height: 20px;
-	width: 20px;
+    transform: translateX(-2%) translateY(-20%);
+	height: 15px;
+	width: 15px;
 }
 
-/* .list-items{
-	margin: 0 2rem;
-	padding: 1rem 0;
-	border-bottom: 1px solid rgb(172, 172, 172);
-	background-color: #b1b1b1;
-	} 
-*/

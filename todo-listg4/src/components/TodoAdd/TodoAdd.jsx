@@ -13,7 +13,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 
 		let newTodo = {
 			id: new Date().getTime(),
-			description: '  '+description+'  ',
+			description: description,
 			done: false,
 		};
 
@@ -23,19 +23,18 @@ export const TodoAdd = ({ handleNewTodo }) => {
 
 	return (
 		<form onSubmit={onFormSubmit}>
-			<button className='btn-add' type='submit'>
-				<span className='mas'>+</span>
-			</button>
 			<input
 				type='text'
 				className='input-add'
 				name='description'
 				value={description}
 				onChange={onInputChange}
-				placeholder='Add shit to do ........'
+				placeholder='Agrega una nueva tarea'
 			/>
 
-			
+			<button className='btn-add' type='submit'>
+				<span className='mas'>+</span>
+			</button>
 		</form>
 	);
 };
