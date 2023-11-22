@@ -4,6 +4,7 @@ import { TodoAdd } from './components/TodoAdd/TodoAdd'
 import {TodoList} from './components/TodoList/TodoList'
 import { useTodo } from './hooks/useTodo'
 import { TodoNavbar } from './components/TodoNavbar/navbar'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
     const{
@@ -15,7 +16,6 @@ function App() {
 		handleCompleteTodo,
 		handleUpdateTodo,
 	} = useTodo();
-
     return(
         <>
 			<div className='card-to-do'>
@@ -30,13 +30,26 @@ function App() {
 				<div className='add-todo'>
 					<TodoAdd handleNewTodo={handleNewTodo} />
 				</div>
-
-				<TodoList
+				<Routes>
+					<Route path='/All' element={<TodoList
 					todos={todos}
 					handleUpdateTodo={handleUpdateTodo}
 					handleDeleteTodo={handleDeleteTodo}
 					handleCompleteTodo={handleCompleteTodo}
-				/>
+				/>}></Route>
+					<Route path='/Active' element={<TodoList
+					todos={todos.filter((todo) => !todo.done)}
+					handleUpdateTodo={handleUpdateTodo}
+					handleDeleteTodo={handleDeleteTodo}
+					handleCompleteTodo={handleCompleteTodo}
+				/>}></Route>
+					<Route path='/Finished' element={<TodoList
+					todos={todos.filter((todo) => todo.done)}
+					handleUpdateTodo={handleUpdateTodo}
+					handleDeleteTodo={handleDeleteTodo}
+					handleCompleteTodo={handleCompleteTodo}
+				/>}></Route>
+				</Routes>
 			</div>
         </>
     );
