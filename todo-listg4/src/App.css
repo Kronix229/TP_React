@@ -66,6 +66,7 @@ h4 {
 	margin-bottom: 30px;
 	display: flex;
 	padding: 6px;
+	padding: 6px;
 }
 ul {
 	margin-top: 50px;
@@ -187,6 +188,7 @@ form {
 .mas {
 	position: relative;
   transform: translateX(1%) translateY(-33%);
+  transform: translateX(1%) translateY(-33%);
 	height: 20px;
 	width: 20px;
 }
@@ -231,10 +233,3 @@ form {
  padding: 0 3px;
 }
 
-/* .list-items{
-	margin: 0 2rem;
-	padding: 1rem 0;
-	border-bottom: 1px solid rgb(172, 172, 172);
-	background-color: #b1b1b1;
-	} 
-*/

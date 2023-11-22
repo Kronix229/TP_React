@@ -31,6 +31,12 @@ function App() {
 					<TodoAdd handleNewTodo={handleNewTodo} />
 				</div>
 				<Routes>
+					<Route path='/' element={<TodoList
+					todos={todos}
+					handleUpdateTodo={handleUpdateTodo}
+					handleDeleteTodo={handleDeleteTodo}
+					handleCompleteTodo={handleCompleteTodo}
+				/>}></Route>
 					<Route path='/All' element={<TodoList
 					todos={todos}
 					handleUpdateTodo={handleUpdateTodo}
