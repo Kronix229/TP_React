@@ -22,11 +22,12 @@ function App() {
 			<div className='card-to-do'>
 			
 				<div className='counter-todos'>
+					<TodoFecha/>
 					<TodoNavbar 
 					todosCount= {todosCount}
 					pendingTodosCount = {pendingTodosCount}
 					/>
-					<TodoFecha/>
+					
 				</div>
 				
 				<div className='add-todo'>
