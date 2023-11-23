@@ -22,7 +22,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 	};
 
 	return (
-		<form onSubmit={onFormSubmit}>
+		<form onSubmit={onFormSubmit} className='input-task'>
 			<button className='btn-add' type='submit'>
 				<span className='mas'>+</span>
 			</button>

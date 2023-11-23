@@ -64,15 +64,12 @@ h4 {
 	background-color: rgb(250, 234, 144);
 	width: 700px;
 	margin-bottom: 30px;
-	display: flex;
 	padding: 6px;
 	padding: 6px;
 }
 ul {
-	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
-	/* gap: 15px; */
 }
 
 ul li {
@@ -83,12 +80,10 @@ ul li {
 	gap: 20px;
 	padding: 10px 0px;
 	margin: 0 2rem;
-	padding: 1rem 0;
 	border-bottom: 1px solid rgb(172, 172, 172);
-	/* background-color: #b1b1b1; */
 }
 
-ul li:last-child {
+.list-item:last-child {
 	padding-bottom: 20px;
 	border-bottom: 0px solid rgb(172, 172, 172);
 }
@@ -187,8 +182,7 @@ form {
 }
 .mas {
 	position: relative;
-  transform: translateX(1%) translateY(-33%);
-  transform: translateX(1%) translateY(-33%);
+	transform: translateX(1%) translateY(-33%);
 	height: 20px;
 	width: 20px;
 }
@@ -197,7 +191,8 @@ form {
 	font-size: 14px;
 	box-sizing: border-box;
 	display: flex;
-	justify-content:center;
+	justify-content:space-between;
+	padding: 0 2rem;;
 	align-items: stretch;
 	gap: 1rem;
 }
@@ -217,19 +212,32 @@ form {
 }
 .contadores {
 	color: rgb(250, 250, 250);
-	margin-left: 190%;
 	display: flex;
 	flex-direction: row;
-	gap: 5px;
+	font-size: 18px;
+	gap: 20px;
+	height: 22px;
+	width: 22px;
+	margin-right: 70px;
+	margin-top: 8px;
 }
 .Tcount {
 	background-color: #8f8f8f;
 	border-radius: 15%;
-	padding: 0 3px;
+	padding: 0 8px;
 }
 .Pcount {
- background-color: #ee6567;
- border-radius: 15%;
- padding: 0 3px;
+	background-color: #ee6567;
+	border-radius: 15%;
+	padding: 0 8px;
 }
 
+.fecha-container{
+	text-align: end;
+	padding-right: 1rem;
+	height: 25px;
+}
+
+.input-task{
+	padding: 1rem 0;
+}
