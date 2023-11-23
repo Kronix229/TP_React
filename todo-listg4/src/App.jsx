@@ -4,6 +4,7 @@ import { TodoAdd } from './components/TodoAdd/TodoAdd'
 import {TodoList} from './components/TodoList/TodoList'
 import { useTodo } from './hooks/useTodo'
 import { TodoNavbar } from './components/TodoNavbar/navbar'
+import TodoFecha from './components/TodoFecha/todoFecha';
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -19,14 +20,15 @@ function App() {
     return(
         <>
 			<div className='card-to-do'>
-
+			
 				<div className='counter-todos'>
 					<TodoNavbar 
 					todosCount= {todosCount}
 					pendingTodosCount = {pendingTodosCount}
 					/>
+					<TodoFecha/>
 				</div>
-
+				
 				<div className='add-todo'>
 					<TodoAdd handleNewTodo={handleNewTodo} />
 				</div>
