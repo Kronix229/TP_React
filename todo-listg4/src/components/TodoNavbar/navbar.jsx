@@ -17,7 +17,6 @@ export const TodoNavbar = ({todosCount, pendingTodosCount}) => {
             <div className='Tcount'>{todosCount}</div>
             <div className='Pcount'>{pendingTodosCount}</div>
         </ul>
-
        </nav>
     )
 }
