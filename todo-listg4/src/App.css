@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+  }
 * {
 	margin: 0;
 	padding: 0;
@@ -64,8 +68,7 @@ h4 {
 	background-color: rgb(250, 234, 144);
 	width: 700px;
 	margin-bottom: 30px;
-	padding: 6px;
-	padding: 6px;
+	/* padding: 6px; */
 }
 ul {
 	display: flex;
@@ -80,7 +83,7 @@ ul li {
 	gap: 20px;
 	padding: 10px 0px;
 	margin: 0 2rem;
-	border-bottom: 1px solid rgb(172, 172, 172);
+	border-bottom: 1px solid rgb(172, 172, 172); 
 }
 
 .list-item:last-child {
@@ -150,6 +153,7 @@ form {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	margin-left: 1.4rem;
 }
 
 .input-add {
@@ -189,16 +193,20 @@ form {
 
 .nav {
 	font-size: 14px;
+	font-family: Roboto;
 	box-sizing: border-box;
 	display: flex;
 	justify-content:space-between;
-	padding: 0 2rem;;
+	padding: 0 1.8rem 0 3.6rem;
 	align-items: stretch;
 	gap: 1rem;
 }
 .nav ul {
 	margin: 0;
 	flex-direction: row;
+}
+.nav ul li {
+	border-bottom: none;
 }
 .nav a {
 	color: inherit;
@@ -214,22 +222,23 @@ form {
 	color: rgb(250, 250, 250);
 	display: flex;
 	flex-direction: row;
-	font-size: 18px;
+	font-size: 13px;
 	gap: 20px;
 	height: 22px;
 	width: 22px;
 	margin-right: 70px;
 	margin-top: 8px;
 }
-.Tcount {
-	background-color: #8f8f8f;
+.Tcount, .Pcount {
 	border-radius: 15%;
 	padding: 0 8px;
+	padding-top: 2px;
+}
+.Tcount {
+	background-color: #8f8f8f;
 }
 .Pcount {
 	background-color: #ee6567;
-	border-radius: 15%;
-	padding: 0 8px;
 }
 
 .fecha-container{
