@@ -207,7 +207,7 @@ form {
 }
 .nav ul li {
 	border-bottom: none;
-	padding: 0.2rem 1rem;
+	padding: 0.2rem 0.5rem;
 	margin: 0 1rem;
 	border-radius: 10px;
 }
