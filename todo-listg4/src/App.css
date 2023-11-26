@@ -83,7 +83,7 @@ ul li {
 	gap: 20px;
 	padding: 10px 0px;
 	margin: 0 2rem;
-	/* border-bottom: 1px solid rgb(172, 172, 172); */
+	border-bottom: 1px solid rgb(172, 172, 172); 
 }
 
 .list-item:last-child {
@@ -203,6 +203,9 @@ form {
 .nav ul {
 	margin: 0;
 	flex-direction: row;
+}
+.nav ul li {
+	border-bottom: none;
 }
 .nav a {
 	color: inherit;
