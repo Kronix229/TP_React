@@ -18,11 +18,14 @@
 
 body {
 	font-family: Poppins;
-	max-width: 1200px;
-	margin: 40px auto;
+	/* max-width: 1200px; */
+	margin: 80px auto;
 	display: flex;
 	justify-content: center;
-	background-image: url(./components/Images/fondoTodo.jpg);
+	background-image: url(./components/Images/oficinaFoto.webp);
+	background-repeat:repeat-y;
+	background-size: cover;
+	height: 100%;
 }
 
 .card-to-do {
