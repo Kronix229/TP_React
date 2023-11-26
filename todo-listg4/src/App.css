@@ -217,7 +217,8 @@ form {
 	padding: 0.5rem
 }
 .nav li:hover {
-	background-color: #8f8f8f;
+	background: rgb(143,143,143);
+	background: linear-gradient(180deg, rgba(143,143,143,.6) 60%, rgb(207, 207, 207) 100%);
 	cursor: pointer;
 }
 
