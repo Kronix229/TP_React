@@ -220,6 +220,7 @@ form {
 	background: rgb(143,143,143);
 	background: linear-gradient(180deg, rgba(143,143,143,.6) 60%, rgb(207, 207, 207) 100%);
 	cursor: pointer;
+	font-weight: 600;
 }
 
 .filter {
