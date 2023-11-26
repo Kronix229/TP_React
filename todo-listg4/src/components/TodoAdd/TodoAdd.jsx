@@ -32,7 +32,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
 				name='description'
 				value={description}
 				onChange={onInputChange}
-				placeholder='Add shit to do ........'
+				placeholder='Add tasks to do ........'
 			/>
 
 			
