@@ -12,3 +12,8 @@ Currently, two official plugins are available:
 Para inicializar el proyecto, posicionarse dentro de "../todo-listg4" y correr npm install.
 
 Luego, npm run dev para levantarlo.
+
+---------------------------------------------------------------------
+Integrantes del grupo 4 que trabajaron en el proyecto:
+
+Luana Martinez, Martin Laurito, Mauricio Fredes
