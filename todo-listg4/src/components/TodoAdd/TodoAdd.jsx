@@ -34,8 +34,6 @@ export const TodoAdd = ({ handleNewTodo }) => {
 				onChange={onInputChange}
 				placeholder='Add tasks to do ........'
 			/>
-
-			
 		</form>
 	);
 };

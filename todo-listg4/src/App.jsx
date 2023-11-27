@@ -20,47 +20,50 @@ function App() {
     return(
         <>
 			<div className='card-to-do'>
-			
-				<div className='counter-todos'>
+				<div className='card-to-do-sub'>
+					<div className='counter-todos'>
 					{/* <TodoFecha/> */}
 					<TodoNavbar 
 					todosCount= {todosCount}
 					pendingTodosCount = {pendingTodosCount}
 					/>
+					</div>
 					
+					<div className='add-todo'>
+						<TodoAdd handleNewTodo={handleNewTodo} />
+					</div>
+					<Routes>
+						<Route path='/' element={<TodoList
+						todos={todos}
+						handleUpdateTodo={handleUpdateTodo}
+						handleDeleteTodo={handleDeleteTodo}
+						handleCompleteTodo={handleCompleteTodo}
+					/>}></Route>
+						<Route path='/All' element={<TodoList
+						todos={todos}
+						handleUpdateTodo={handleUpdateTodo}
+						handleDeleteTodo={handleDeleteTodo}
+						handleCompleteTodo={handleCompleteTodo}
+					/>}></Route>
+						<Route path='/Active' element={<TodoList
+						todos={todos.filter((todo) => !todo.done)}
+						handleUpdateTodo={handleUpdateTodo}
+						handleDeleteTodo={handleDeleteTodo}
+						handleCompleteTodo={handleCompleteTodo}
+					/>}></Route>
+						<Route path='/Finished' element={<TodoList
+						todos={todos.filter((todo) => todo.done)}
+						handleUpdateTodo={handleUpdateTodo}
+						handleDeleteTodo={handleDeleteTodo}
+						handleCompleteTodo={handleCompleteTodo}
+					/>}></Route>
+					</Routes>
+
 				</div>
-				
-				<div className='add-todo'>
-					<TodoAdd handleNewTodo={handleNewTodo} />
-				</div>
-				<Routes>
-					<Route path='/' element={<TodoList
-					todos={todos}
-					handleUpdateTodo={handleUpdateTodo}
-					handleDeleteTodo={handleDeleteTodo}
-					handleCompleteTodo={handleCompleteTodo}
-				/>}></Route>
-					<Route path='/All' element={<TodoList
-					todos={todos}
-					handleUpdateTodo={handleUpdateTodo}
-					handleDeleteTodo={handleDeleteTodo}
-					handleCompleteTodo={handleCompleteTodo}
-				/>}></Route>
-					<Route path='/Active' element={<TodoList
-					todos={todos.filter((todo) => !todo.done)}
-					handleUpdateTodo={handleUpdateTodo}
-					handleDeleteTodo={handleDeleteTodo}
-					handleCompleteTodo={handleCompleteTodo}
-				/>}></Route>
-					<Route path='/Finished' element={<TodoList
-					todos={todos.filter((todo) => todo.done)}
-					handleUpdateTodo={handleUpdateTodo}
-					handleDeleteTodo={handleDeleteTodo}
-					handleCompleteTodo={handleCompleteTodo}
-				/>}></Route>
-				</Routes>
-				<footer><MembersPage/></footer>
 			</div>
+			<footer>
+				<MembersPage/>
+			</footer>
         </>
     );
 }
