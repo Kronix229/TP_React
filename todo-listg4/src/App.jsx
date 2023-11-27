@@ -4,7 +4,7 @@ import { TodoAdd } from './components/TodoAdd/TodoAdd'
 import {TodoList} from './components/TodoList/TodoList'
 import { useTodo } from './hooks/useTodo'
 import { TodoNavbar } from './components/TodoNavbar/navbar'
-import TodoFecha from './components/TodoFecha/todoFecha';
+import MembersPage from './components/MembersPage/MembersPage'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -59,6 +59,7 @@ function App() {
 					handleCompleteTodo={handleCompleteTodo}
 				/>}></Route>
 				</Routes>
+				<footer><MembersPage/></footer>
 			</div>
         </>
     );
